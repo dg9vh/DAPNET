@@ -20,7 +20,7 @@ class News:
         if slot != 0:
             post = {"rubricName": rubric, "text": text, "number": slot}
         else:
-            post = {"rubricName": rubric, "text": text}
+            post = {"rubricName": rubric, "text": text, "number": 1}
 
         # and sending it to DAPNET
         try:
