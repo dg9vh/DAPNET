@@ -8,7 +8,7 @@ from requests.auth import HTTPBasicAuth
 
 class Call:
     # alternate URL: https://hampager.de/api
-    def __init__(self, username, password, host="http://44.225.164.27:8080"):
+    def __init__(self, username, password, host="http://44.149.166.27:8080"):
         self.username, self.password, self.host = username, password, host
 
     def send(self, message, callsignnames, transmittergroupnames, emergency=False):

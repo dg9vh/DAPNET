@@ -7,7 +7,7 @@ from requests.auth import HTTPBasicAuth
 
 class News:
     # alternate URL: https://hampager.de/api
-    def __init__(self, username, password, host="http://44.225.164.27:8080"):
+    def __init__(self, username, password, host="http://44.149.166.27:8080"):
         self.username, self.password, self.host = username, password, host
 
     def send(self, message, rubric, slot=0):
@@ -20,7 +20,7 @@ class News:
         if slot != 0:
             post = {"rubricName": rubric, "text": text, "number": slot}
         else:
-            post = {"rubricName": rubric, "text": text, "number": 1}
+            post = {"rubricName": rubric, "text": text}
 
         # and sending it to DAPNET
         try:
